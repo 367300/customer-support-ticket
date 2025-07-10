@@ -69,6 +69,7 @@ pyarrow==20.0.0
 Pygments==2.19.2
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
+python-decouple==3.8
 pytz==2025.2
 PyYAML==6.0.2
 pyzmq==27.0.0

@@ -12,7 +12,7 @@ DATASETS = {
     "translated": {
         "url": "https://downloader.disk.yandex.ru/disk/81e108f339e3e0ef3a1378f4ae5e22fbebae03bdb6e7c6d350b6e56e758c1066/686d6835/i0i6Yaa7_UhYBPsu1K52dyeCRpEefwmphLTwsR2bPwKnUs6GF73FueciXx8WptDscc3aGjVdXBwJrkXSDyHtWg%3D%3D?uid=0&filename=customer_support_tickets_translated.csv&disposition=attachment&hash=xJ8vXDNTdAzzREchd0auejmw2UMQ1E2%2B4X5piMnMz0pTVMR1pr0EFCSgrZjeaYtJq/J6bpmRyOJonT3VoXnDag%3D%3D%3A&limit=0&content_type=text%2Fplain&owner_uid=795869371&fsize=8342791&hid=1f87ec8203f2906e4631eb77de3c782c&media_type=data&tknv=v3",
         "filename": "customer_support_tickets_translated.csv",
-        "save_dir": "data/processed"
+        "save_dir": "data/raw"
     }
 }
 
