@@ -13,6 +13,16 @@ DATASETS = {
         "public_url": "https://disk.yandex.ru/d/9GNABDyrbm58Jg", 
         "filename": "customer_support_tickets_translated.csv",
         "save_dir": "data/raw"
+    },
+    "train_data": {
+        "public_url": "https://disk.yandex.ru/d/cLZ6S-29x-iEtQ",
+        "filename": "train_data.csv",
+        "save_dir": "data/raw"
+    },
+    "test_data": {
+        "public_url": "https://disk.yandex.ru/d/6Z9WkPOw0jAWUA", 
+        "filename": "test_data.csv",
+        "save_dir": "data/raw"
     }
 }
 
