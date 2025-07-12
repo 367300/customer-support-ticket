@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  model-api:
+    build: ./src/service
+    container_name: model-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src/service:/app
+    environment:
+      - PYTHONUNBUFFERED=1
