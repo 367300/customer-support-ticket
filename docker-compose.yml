@@ -4,8 +4,9 @@ services:
     build: ./src/service
     container_name: model-api
     ports:
-      - "8000:8000"
+      - "${PORT_PREDICT:-8000}:8000"
     volumes:
       - ./src/service:/app
     environment:
       - PYTHONUNBUFFERED=1
+      - PORT=8000  # Значение по умолчанию, можно переопределить через .env или команду
