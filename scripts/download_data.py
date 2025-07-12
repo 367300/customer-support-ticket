@@ -15,12 +15,12 @@ DATASETS = {
         "save_dir": "data/raw"
     },
     "train_data": {
-        "public_url": "https://disk.yandex.ru/d/cLZ6S-29x-iEtQ",
+        "public_url": "https://disk.yandex.ru/d/z1ynMVMmxoamuw",
         "filename": "train_data.csv",
         "save_dir": "data/raw"
     },
     "test_data": {
-        "public_url": "https://disk.yandex.ru/d/6Z9WkPOw0jAWUA", 
+        "public_url": "https://disk.yandex.ru/d/OzsSvYv1yD_IQg", 
         "filename": "test_data.csv",
         "save_dir": "data/raw"
     }
