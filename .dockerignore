@@ -1,0 +1,14 @@
+data/
+notebooks/
+*.csv
+*.zip
+*.ipynb
+*.pt
+*.joblib
+*.pkl
+*.h5
+*.tar
+*.gz
+*.whl
+__pycache__/
+*.log

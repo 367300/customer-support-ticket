@@ -11,10 +11,13 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
 from sklearn.pipeline import Pipeline
 
+
 MODEL_PATH = 'model.joblib'
 VECTORIZER_PATH = 'vectorizer.joblib'
 STOPWORDS = set(stopwords.words('russian'))
 STEMMER = SnowballStemmer('russian')
+
+
 
 app = FastAPI()
 
@@ -34,9 +37,18 @@ if os.path.exists(MODEL_PATH) and os.path.exists(VECTORIZER_PATH):
     model = joblib.load(MODEL_PATH)
     vectorizer = joblib.load(VECTORIZER_PATH)
 else:
+
     print('------------------------------------')
-    print(os.getcwd())
+    print("Модель или векторизатор не были обнаружены, начинается обучение на лету!")
     print('------------------------------------')
+    
+    import subprocess
+
+    subprocess.run([
+        "python", "download_data.py",
+        "--dataset", "train_data",
+        "--target-dir", "data/raw"
+    ], check=True)
     # Если pickle нет, обучаем на лету (для dev)
     df = pd.read_csv('data/raw/train_data.csv')
     df = df.drop_duplicates(subset=['utterance_ru']).reset_index(drop=True)

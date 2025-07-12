@@ -1,12 +1,13 @@
 version: '3.8'
 services:
   model-api:
-    build: ./src/service
+    build:
+      context: src/service/docker_build
+      dockerfile: Dockerfile
     container_name: model-api
     ports:
       - "${PORT_PREDICT:-8000}:8000"
-    volumes:
-      - ./src/service:/app
     environment:
       - PYTHONUNBUFFERED=1
-      - PORT=8000  # Значение по умолчанию, можно переопределить через .env или команду
+      - PORT=${PORT:-8000}
+    # volumes:  # не нужен для production
