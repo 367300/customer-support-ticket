@@ -10,4 +10,5 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
       - PORT=${PORT:-8000}
-    # volumes:  # не нужен для production
+    volumes:
+      - ./src/service/docker_build:/app/service
