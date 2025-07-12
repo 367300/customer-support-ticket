@@ -11,8 +11,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
 from sklearn.pipeline import Pipeline
 
-MODEL_PATH = 'model_svm_tfidf.joblib'
-VECTORIZER_PATH = 'vectorizer_tfidf.joblib'
+MODEL_PATH = 'model.joblib'
+VECTORIZER_PATH = 'vectorizer.joblib'
 STOPWORDS = set(stopwords.words('russian'))
 STEMMER = SnowballStemmer('russian')
 

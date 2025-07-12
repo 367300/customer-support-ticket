@@ -65,7 +65,7 @@ python scripts/download_data.py --dataset test_data     # только test_data
    ```
 
 3. **(Опционально) Переобучите модель:**
-   - Если хотите обновить модель — обучите её в ноутбуке и сохраните файлы `model_svm_tfidf.joblib` и `vectorizer_tfidf.joblib` в папку `src/service/`.
+   - Если хотите обновить модель — обучите её в ноутбуке и сохраните файлы `model.joblib` и `vectorizer.joblib` в папку `src/service/`.
 
 ## Структура проекта
 ```
