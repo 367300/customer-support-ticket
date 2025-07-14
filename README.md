@@ -47,10 +47,24 @@ python scripts/download_data.py --dataset test_data     # только test_data
 
 ## Быстрый старт: как запустить сервис
 
-1. **Соберите и запустите сервис:**
+1. **Клонируйте репозиторий:**
    ```bash
-   docker-compose build
-   docker-compose up
+   git clone https://github.com/367300/customer-support-ticket.git
+   cd customer-support-ticket
+   ```
+2. Затем запустите сборку и запуск сервиса (необходим установленный докер)
+
+   ```bash
+   docker compose up -d
+   ```
+
+   Если возникнут ошибки, можно явно указать сборку:
+
+   ```bash
+   docker compose build
+   
+   # Если не указывать флаг -d то запуск будет не на фоне, а прямо в оболочке
+   docker compose up
    ```
    Сервис будет доступен на http://localhost:8000 (или на порту, который вы укажете)
 
@@ -88,12 +102,12 @@ PORT=5001
 
 - Через .env:
   ```bash
-  docker-compose up
+  docker compose up
   # сервис будет доступен на http://localhost:5001
   ```
 - Через переменные среды:
   ```bash
-  PORT_PREDICT=5002 PORT=5002 docker-compose up
+  PORT_PREDICT=5002 PORT=5002 docker compose up
   # сервис будет доступен на http://localhost:5002
   ```
 
