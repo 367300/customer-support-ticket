@@ -10,5 +10,10 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
       - PORT=${PORT:-8000}
+    deploy:
+      restart_policy:
+        condition: unless-stopped
+        delay: 30s
+        window: 300s
     volumes:
       - ./src/service/docker_build:/app/service
